@@ -43,3 +43,23 @@ $posts = [
 ]
 ?>
 
+<?php
+    foreach($posts as $key => $value){
+        ?>
+        <h2><?= "{$key}"?></h2>
+        <ul>
+            <?php
+            foreach($value as $post){
+                ?>
+                <li>
+                    <h4><?= $post['title']?></h4>
+                    <h4><?= $post['author']?></h4>
+                    <p><?= $post['text']?> </p>
+                </li>
+                <?php
+            }
+            ?>
+        </ul>
+        <?php
+    }
+    ?>

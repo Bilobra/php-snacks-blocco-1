@@ -13,4 +13,7 @@ while ( count($numbers) < 15){
         $numbers[] = $number;
     };
 }
+
+var_dump($numbers);
+
 ?>
