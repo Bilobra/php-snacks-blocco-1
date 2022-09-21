@@ -14,7 +14,7 @@ $name = $_GET['name'];
 $checkName = strlen($name);
 
 $age = $_GET['age'];
-$checkAge = is_integer($age);
+$checkAge = is_numeric($age);
 
 if($checkName >= 3 && $atElement != false && $dotElement != false && $checkAge) {
     $msg = 'accesso riuscito';
